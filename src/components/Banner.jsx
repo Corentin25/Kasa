@@ -1,5 +1,7 @@
-export function Banner () {
-    return (
-        <div></div>
-    )    
-};
+export function Banner() {
+  return (
+    <div>
+
+    </div>
+  );
+}

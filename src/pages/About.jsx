@@ -1,5 +1,7 @@
-export function About () {
-    return (
-        <div>À Propos</div>
-    )    
-};
+export function About() {
+  return (
+    <div>
+        
+    </div>
+  );
+}

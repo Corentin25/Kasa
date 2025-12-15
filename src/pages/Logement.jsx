@@ -1,5 +1,7 @@
-export function Logement () {
-    return (
-        <div>Logement</div>
-    )    
-};
+export function Logement() {
+  return (
+    <div>
+
+    </div>
+  );
+}

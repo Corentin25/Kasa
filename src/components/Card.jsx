@@ -1,5 +1,7 @@
-export function Card () {
-    return (
-        <div></div>
-    )    
-};
+export function Card() {
+  return (
+    <div>
+
+    </div>
+  );
+}

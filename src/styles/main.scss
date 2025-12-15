@@ -1,11 +1,4 @@
-/* COLORS */
-
-$salmon: #FF6060;
-$white: #ffffff;
-$black: #000000;
-$grdSalmon: linear-gradient(180deg, #FF6060 0%, #be3939 100%);
-
-/* GLOBAL */
+@import "./variables";
 
 * {
   margin: 0;
@@ -27,15 +20,5 @@ body {
   min-width: 320px;
   max-width: 1440px;
   min-height: 100vh;
-  padding: 0.5em;
+  padding: 0;
 }
-
-/* HEADER */
-
-
-
-/* BODY */
-
-
-
-/* FOOTER */

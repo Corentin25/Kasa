@@ -1,5 +1,7 @@
-export function Collapse () {
-    return (
-        <div></div>
-    )    
-};
+export function Collapse() {
+  return (
+    <div>
+
+    </div>
+  );
+}
