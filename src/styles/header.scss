@@ -9,10 +9,9 @@ nav {
   padding: 1.5em 1em;
   & .logoHeader {
     width: 90%;
-    max-width: 120px;
+    max-width: 160px;
     @media (min-width: 768px) {
       width: 100%;
-      max-width: 160px;
     }
   }
   & div {
