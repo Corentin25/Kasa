@@ -1,4 +1,4 @@
-@import "./variables";
+@use "./variables" as *;
 
 * {
   margin: 0;
@@ -7,12 +7,13 @@
 
 main {
   padding: 0em 1em;
+  min-height: 90vh;
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   min-width: 320px;
   max-width: 1440px;

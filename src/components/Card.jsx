@@ -1,7 +1,11 @@
-export function Card() {
-  return (
-    <div>
+import { Link } from "react-router-dom";
+import "../styles/card.scss";
 
-    </div>
+export function Card({ id, title, cover }) {
+  return (
+    <Link to={`/logement/${id}`} className="card">
+      <img src={cover} alt={title} className="imgCard" />
+      <h2 className="titleCard">{title}</h2>
+    </Link>
   );
 }

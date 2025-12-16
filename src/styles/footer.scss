@@ -1,0 +1,24 @@
+@use "./variables" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 210px;
+  background-color: $black;
+  gap: 15px;
+}
+
+.logoFooter {
+  width: 120px;
+}
+
+.textFooter {
+  color: $white;
+  font-size: 20px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}

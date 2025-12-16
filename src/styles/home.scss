@@ -1,0 +1,22 @@
+@use "./variables" as *;
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  overflow: hidden;
+  border-radius: 25px;
+  margin: 1.5em 0em;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: $grey;
+    padding: 2.5em;
+  }
+  @media (min-width: 1040px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    background-color: $grey;
+    padding: 2.5em;
+  }
+}
