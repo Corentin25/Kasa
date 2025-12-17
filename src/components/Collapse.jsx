@@ -19,7 +19,7 @@ export function Collapse({ title, description }) {
           className={`arrowClps ${isOpen ? "openArrow" : ""}`}
         />
       </div>
-      <div className={`desciptionClps ${isOpen ? "open" : ""}`}>
+      <div className={`descriptionClps ${isOpen ? "openArrow" : ""}`}>
         <div className="textClps">{description}</div>
       </div>
     </div>
