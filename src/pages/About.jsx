@@ -9,7 +9,7 @@ export function About() {
   return (
     <div>
       <Banner image={bannerAbout} />
-      <section>
+      <section className="collapse">
         {aboutData.map((dataClps) => (
           <Collapse
             key={dataClps.id}

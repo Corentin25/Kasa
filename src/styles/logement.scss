@@ -1,2 +1,114 @@
 @use "./variables" as *;
 
+.titles-host-rating {
+  display: flex;
+  flex-direction: column;
+  & .titles {
+    & h1 {
+      font-size: 20px;
+      font-weight: 500;
+      color: $salmon;
+      padding-top: 0.5em;
+      padding-right: none;
+      @media (min-width: 768px) {
+        font-size: 35px;
+        padding-right: 1em;
+      }
+    }
+    & h2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: $black;
+      margin-top: 0.5em;
+      @media (min-width: 768px) {
+        font-size: 18px;
+        margin-top: 0;
+      }
+    }
+    & .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 1.5em;
+      & span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: $salmon;
+        color: $white;
+        font-size: 10px;
+        font-weight: 600;
+        text-align: center;
+        min-width: fit-content;
+        padding: 0.6em 2em;
+        @media (min-width: 768px) {
+          border-radius: 10px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  & .hostRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    & .host {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1.5em 0em;
+      & p {
+        color: $salmon;
+        font-size: 12px;
+        text-align: right;
+        margin-right: 1em;
+        @media (min-width: 768px) {
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+      & img {
+        width: 38px;
+        border-radius: 5em;
+        @media (min-width: 768px) {
+          width: 60px;
+        }
+      }
+    }
+    & .rating {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10px;
+      & img {
+        width: 16px;
+        @media (min-width: 768px) {
+          width: 25px;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: flex-end;
+      width: fit-content;
+    }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.description-equipment {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin: 1.5em 0em 0.5em 0em;
+  }
+}

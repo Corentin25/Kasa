@@ -17,6 +17,7 @@ export function Slideshow({ pictures }) {
   return (
     <section className="slideShow">
       <img
+        key={slideIndex}
         src={pictures[slideIndex]}
         alt="Photo du logement"
         className="imgSlideshow"

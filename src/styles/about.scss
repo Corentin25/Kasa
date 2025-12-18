@@ -3,10 +3,11 @@
 .collapse {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: auto;
-  width: 100%;
+  padding-top: 1em;
+  gap: 25px;
   @media (min-width: 768px) {
     width: 80%;
+    gap: 35px;
   }
 }

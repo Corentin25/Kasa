@@ -10,13 +10,14 @@ export function Collapse({ title, description }) {
   };
 
   return (
-    <div className="collapse">
-      <div className="buttonClps" onClick={openDownClsp}>
+    <div>
+      <div className="buttonClps">
         <h3>{title}</h3>
         <img
           src={arrow}
           alt="Flèche ouvrir / fermer"
           className={`arrowClps ${isOpen ? "openArrow" : ""}`}
+          onClick={openDownClsp}
         />
       </div>
       <div className={`descriptionClps ${isOpen ? "openArrow" : ""}`}>
