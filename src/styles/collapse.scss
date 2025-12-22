@@ -9,6 +9,7 @@
   background-color: $salmon;
   border-radius: 6px;
   padding: 0em 1em;
+  cursor: pointer;
   & h3 {
     font-weight: 600;
     font-size: 14px;
@@ -20,7 +21,6 @@
   & .arrowClps {
     width: 24px;
     transition: transform 0.3s ease-in-out;
-    cursor: pointer;
     &.openArrow {
       transform: rotate(-180deg);
     }
@@ -29,8 +29,10 @@
 
 .descriptionClps {
   margin: auto;
-  width: 95%;
+  width: 98%;
   max-height: 0;
+  background-color: $grey;
+  border-radius: 0px 0px 5px 5px;
   opacity: 0;
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   &.openArrow {
@@ -41,9 +43,15 @@
     color: $black;
     font-size: 13px;
     text-align: left;
-    padding: 1em 0.5em;
+    padding: 1.5em;
+    pointer-events: none;
+    & ul, li {
+      list-style-type: none;
+      padding-left: 0;
+      line-height: 1.5;
+    }
     @media (min-width: 768px) {
-      font-size: 15px;
+      font-size: 18px;
     }
   }
 }

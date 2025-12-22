@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-
 import "../styles/error404.scss";
 
-export function Error() {
+export function Error404() {
   return (
     <div className="errorBloc">
       <h1 className="errorH1">404</h1>

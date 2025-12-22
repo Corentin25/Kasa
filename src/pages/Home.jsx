@@ -1,13 +1,13 @@
+import { Fragment } from "react";
 import { Banner } from "../components/Banner";
 import { Card } from "../components/Card";
 import logements from "../data/logements.json";
 import bannerHome from "../assets/Banner-home.png";
-
 import "../styles/home.scss";
 
 export function Home() {
   return (
-    <div>
+    <Fragment>
       <Banner image={bannerHome} title="Chez vous, partout et ailleurs" />
       <section className="gallery">
         {logements.map((logement) => (
@@ -19,6 +19,6 @@ export function Home() {
           />
         ))}
       </section>
-    </div>
+    </Fragment>
   );
 }
