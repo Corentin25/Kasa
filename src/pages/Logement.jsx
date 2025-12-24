@@ -9,8 +9,8 @@ import starEmpty from "../assets/star-empty.png";
 import "../styles/logement.scss";
 
 export function Logement() {
-  const { id } = useParams();
-  const selectedLogement = logements.find((logement) => logement.id === id);
+  const { idLogement } = useParams();
+  const selectedLogement = logements.find((logement) => logement.id === idLogement);
   
   if (!selectedLogement) {
     return <Error404 />;
