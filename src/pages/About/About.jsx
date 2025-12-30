@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import { Banner } from "../components/Banner";
-import { Collapse } from "../components/Collapse";
-import aboutData from "../data/aboutData.json";
-import bannerAbout from "../assets/Banner-about.png";
-import "../styles/about.scss";
+import { Banner } from "../../components/Banner/Banner";
+import { Collapse } from "../../components/Collapse/Collapse";
+import aboutData from "../../data/aboutData.json";
+import bannerAbout from "../../assets/Banner-about.png";
+import "./about.scss";
 
 export function About() {
   return (

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import arrowLeft from "../assets/arrow-slide-left.png";
-import arrowRight from "../assets/arrow-slide-right.png";
+import arrowLeft from "../../assets/arrow-slide-left.png";
+import arrowRight from "../../assets/arrow-slide-right.png";
 
-import "../styles/slideshow.scss";
+import "./slideshow.scss";
 
 export function Slideshow({ pictures }) {
   const [slideIndex, setSlideIndex] = useState(0);

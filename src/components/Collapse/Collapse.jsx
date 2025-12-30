@@ -1,6 +1,6 @@
 import { useState } from "react";
-import arrow from "../assets/arrow_back.png";
-import "../styles/collapse.scss";
+import arrow from "../../assets/arrow_back.png";
+import "./collapse.scss";
 
 export function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
 import { Fragment } from "react";
-import { Slideshow } from "../components/Slideshow";
-import { Collapse } from "../components/Collapse";
-import { Error404 } from "./Error404";
-import logements from "../data/logements.json";
-import starFull from "../assets/star-full.png";
-import starEmpty from "../assets/star-empty.png";
-import "../styles/logement.scss";
+import { Slideshow } from "../../components/Slideshow/Slideshow";
+import { Collapse } from "../../components/Collapse/Collapse";
+import { Error404 } from "../Error404/Error404";
+import logements from "../../data/logements.json";
+import starFull from "../../assets/star-full.png";
+import starEmpty from "../../assets/star-empty.png";
+import "./logement.scss";
 
 export function Logement() {
   const { idLogement } = useParams();
