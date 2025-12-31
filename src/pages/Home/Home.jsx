@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import { Banner } from "../../components/Banner/Banner";
 import { Card } from "../../components/Card/Card";
 import logements from "../../data/logements.json";
-import bannerHome from "../../assets/Banner-home.png";
+import bannerHome from "../../assets/Banner-home.jpg";
 import "./home.scss";
 
 export function Home() {
