@@ -1,16 +1,28 @@
 import { useParams } from "react-router-dom";
-import { Fragment } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Slideshow } from "../../components/Slideshow/Slideshow";
 import { Tags } from "../../components/Tags/Tags";
 import { Rating } from "../../components/Rating/Rating";
 import { Host } from "../../components/Host/Host";
 import { Collapse } from "../../components/Collapse/Collapse";
 import { Error404 } from "../Error404/Error404";
-import logements from "../../data/logements.json";
 import "./logement.scss";
 
 export function Logement() {
+  const [logements, setLogements] = useState([])
   const { idLogement } = useParams();
+
+  useEffect (() => {
+    fetch("/logements.json")
+    .then((response) => response.json())
+    .then((data) => setLogements(data))
+    .catch((error) => console.error("Erreur lors du chargement :", error));
+  }, []);
+
+  if (logements.length === 0) {
+    return <div>Loading logements...</div>;
+  }
+  
   const selectedLogement = logements.find((logement) => logement.id === idLogement);
   
   if (!selectedLogement) {
